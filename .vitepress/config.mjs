@@ -10,6 +10,7 @@ import pythonSidebar from "./config/sidebar/python.mjs";
 import javaSidebar from "./config/sidebar/java.mjs";
 import aiSidebar from "./config/sidebar/ai.mjs";
 import dockerSidebar from "./config/sidebar/docker.mjs";
+import mybatisSidebar from "./config/sidebar/java/mybatis.mjs";
 
 export default defineConfig({
   title: "AI寰宇空间",
@@ -28,12 +29,19 @@ export default defineConfig({
   themeConfig: {
     logo: "/aihuanyu.space-logo-small.svg",
     nav: [
+      // link为实际的目录名，并且文件下要有index.md文件
       { text: "主页", link: "/" },
       { text: "AI空间", link: "/docs/ai" },
       { text: "Python", link: "/docs/python" },
       { text: "小程序", link: "/docs/mini-app" },
       { text: "JavaScript", link: "/docs/javascript" },
-      { text: "Java", link: "/docs/java" },
+      {
+        text: "Java系列",
+        items: [
+          { text: "Java实战", link: "/docs/java" },
+          { text: "MyBatis", link: "/docs/java/mybatis" },
+        ],
+      },
       { text: "Linux", link: "/docs/linux" },
       { text: "Docker", link: "/docs/docker" },
       { text: "软件设计", link: "/docs/design" },
@@ -51,6 +59,7 @@ export default defineConfig({
       "/docs/python/": pythonSidebar,
       "/docs/java/": javaSidebar,
       "/docs/docker/": dockerSidebar,
+      "/docs/java/mybatis/": mybatisSidebar,
     },
     lastUpdated: {
       text: "最后更新时间",

@@ -27,7 +27,8 @@ export default [
             link: UrlJavaPractice + "System.nanoTime.md",
           },
         ],
-      }, {
+      },
+      {
         text: "关于Maven",
         items: [
           {
@@ -39,27 +40,8 @@ export default [
             link: UrlJava + "maven-solution.md",
           },
         ],
-      }, {
-        text: "关于MyBatis",
-        items: [
-          {
-            text: "模糊查询",
-            link: UrlJava + "like.md",
-          }
-        ],
-      }, {
-        text: "关于MyBatisPlus",
-        items: [
-          {
-            text: "注解TableName",
-            link: UrlMyBatisPlus + "table-name.md",
-          },
-          {
-            text: "注解TableField",
-            link: UrlMyBatisPlus + "table-field.md",
-          },
-        ],
-      }, {
+      },
+      {
         text: "Kafka",
         items: [
           {
@@ -67,7 +49,7 @@ export default [
             link: UrlKafka + "kafka.md",
           },
         ],
-      }
+      },
     ],
   },
 ];
