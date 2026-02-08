@@ -2,7 +2,7 @@ const UrlMyBatis = "/docs/java/mybatis/";
 
 export default [
   {
-    text: "Java文档库",
+    text: "Mybatis 文档库",
     items: [
       {
         text: "关于MyBatis",

@@ -11,6 +11,7 @@ import javaSidebar from "./config/sidebar/java.mjs";
 import aiSidebar from "./config/sidebar/ai.mjs";
 import dockerSidebar from "./config/sidebar/docker.mjs";
 import mybatisSidebar from "./config/sidebar/java/mybatis.mjs";
+import springbootSidebar from "./config/sidebar/java/springboot.mjs";
 
 export default defineConfig({
   title: "AI寰宇空间",
@@ -40,6 +41,7 @@ export default defineConfig({
         items: [
           { text: "Java实战", link: "/docs/java" },
           { text: "MyBatis", link: "/docs/java/mybatis" },
+          { text: "Spring Boot", link: "/docs/java/springboot" },
         ],
       },
       { text: "Linux", link: "/docs/linux" },
@@ -60,6 +62,7 @@ export default defineConfig({
       "/docs/java/": javaSidebar,
       "/docs/docker/": dockerSidebar,
       "/docs/java/mybatis/": mybatisSidebar,
+      "/docs/java/springboot/": springbootSidebar,
     },
     lastUpdated: {
       text: "最后更新时间",

@@ -1,6 +1,5 @@
 const UrlJava = "/docs/java/";
 const UrlJavaPractice = UrlJava + "实战/";
-const UrlMyBatisPlus = UrlJava + "mybatis-plus/";
 const UrlKafka = UrlJava + "Kafka/";
 
 export default [
@@ -25,19 +24,6 @@ export default [
           {
             text: "System.nanoTime()",
             link: UrlJavaPractice + "System.nanoTime.md",
-          },
-        ],
-      },
-      {
-        text: "关于Maven",
-        items: [
-          {
-            text: "Setting文件",
-            link: UrlJava + "maven-setting.md",
-          },
-          {
-            text: "常见解决方式",
-            link: UrlJava + "maven-solution.md",
           },
         ],
       },
